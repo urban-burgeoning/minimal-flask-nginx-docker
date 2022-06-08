@@ -32,7 +32,7 @@ jobs:
         with:
           key: ${{ secrets.SSH_PRIVATE_KEY }} 
           config: ignore
-          known-hosts:  ${{ secrets.SSH_KNOWN_HOSTS }}
+          known_hosts:  ${{ secrets.SSH_KNOWN_HOSTS }}
           if_key_exists: fail
       
       # Runs a single command using the runners shell
