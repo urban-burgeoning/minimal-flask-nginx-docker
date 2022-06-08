@@ -44,8 +44,8 @@ jobs:
         
       # Test if SSH works:
       - name: SSH to server
-        run: ssh devuser@${{ secrets.SERVER_IP_ADDRESS }}
+        run: ssh root@${{ secrets.SERVER_IP_ADDRESS }}
         
       # Rsync files to server:
       - name: Copy files to server with rsync
-        run: rsync -avz . devuser@${{ secrets.SERVER_IP_ADDRESS }}:/home/devuser/topical-island-testing/
+        run: rsync -avz . root@${{ secrets.SERVER_IP_ADDRESS }}:/home/devuser/topical-island-testing/
