@@ -37,4 +37,4 @@ jobs:
       
       # Runs a single command using the runners shell
       - name: Copy files to server with rsync
-        run: rsync -avz ./dist/ devuser@${{ secrets.SERVER_IP_ADDRESS }}:/home/devuser/topical-island-testing/dist/
+        run: rsync -avz . devuser@${{ secrets.SERVER_IP_ADDRESS }}:/home/devuser/topical-island-testing/
