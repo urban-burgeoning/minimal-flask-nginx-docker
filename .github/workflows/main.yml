@@ -35,5 +35,5 @@ jobs:
           path: .
           remote_path: /$FOLDER_NAME/
           remote_host: ${{ secrets.SERVER_IP_ADDRESS }}
-          remote_user: root
-          remote_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          remote_user: devuser
+          remote_key: ${{ secrets.NONROOT_SSH_PRIVATE_KEY }}
