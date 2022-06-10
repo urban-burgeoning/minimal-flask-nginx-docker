@@ -31,7 +31,7 @@ jobs:
         uses: Burnett01/rsync-deployments@5.2
         with:
           switches: -avzr
-          rsh: "cd $FOLDER_NAME; bash build.sh"
+          #rsh: "cd $FOLDER_NAME; bash build.sh"
           path: .
           remote_path: /$FOLDER_NAME/
           remote_host: ${{ secrets.SERVER_IP_ADDRESS }}
